@@ -17,6 +17,12 @@ export default class StorageManager {
     }
 
     static CreateEmptyStorage(path) {
+        let temp = path.split("\\")
+        console.log(path.slice(0, -(temp[temp.length - 1].length)))
+        if (!fs.existsSync(path.slice(0, -(temp[temp.length - 1].length)))) {
+            fs.mkdirSync(path.slice(0, -(temp[temp.length - 1].length)))
+        }
+
         fs.openSync(path, 'w', 0o666)
         fs.writeFileSync(path, JSON.stringify(this.GetEmptyData()))
         console.log('EmptyData is created by ' + path)
