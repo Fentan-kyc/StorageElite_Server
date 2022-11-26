@@ -1,0 +1,30 @@
+{
+  "name": "storageelite_server",
+  "version": "0.1.0",
+  "description": "A simple server app for automation storage",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fentan-kyc/StorageElite_Server.git"
+  },
+  "keywords": [
+    "Storage",
+    "Automation",
+    "AutomationStorage"
+  ],
+  "author": "Fentan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fentan-kyc/StorageElite_Server/issues"
+  },
+  "homepage": "https://github.com/Fentan-kyc/StorageElite_Server#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
